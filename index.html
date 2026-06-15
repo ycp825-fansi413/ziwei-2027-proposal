@@ -47,6 +47,8 @@
   }
   .label.solid{background:var(--navy); color:#fff;}
   .label.outline{border:1px solid var(--gold); color:var(--gold);}
+  .label.a{background:#234; color:#e9c46a;}
+  .label.b{background:var(--gold); color:#fff;}
   h1.sec{font-size:26px; margin:0 0 14px;}
   h2.sec{font-size:22px; margin:36px 0 14px;}
   p{margin:0 0 14px;}
@@ -72,7 +74,12 @@
   .box.fill h4{color:#e9c46a;}
   .box.gold{background:var(--gold-soft); border:1px solid #e8d6a6;}
   .box.gold h4{color:var(--gold);}
+  .box .src{font-size:12.5px; color:var(--muted); margin-top:6px;}
+  .plan{border:2px solid var(--navy); border-radius:14px; padding:6px 24px 22px; margin:22px 0;}
+  .plan.b{border-color:var(--gold);}
+  .plan h3{font-size:20px; margin:18px 0 6px;}
   .tag{display:inline-block; font-size:12px; padding:2px 9px; border-radius:999px; background:var(--gold); color:#fff; margin-left:6px; vertical-align:middle;}
+  .tag.navy{background:var(--navy); color:#e9c46a;}
   .steps{counter-reset:s; margin:20px 0; display:grid; gap:14px;}
   .step{display:flex; gap:14px; align-items:flex-start;}
   .step .n{
@@ -85,7 +92,7 @@
   .flow{display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:24px 0;}
   .flow .d{
     flex:0 0 auto; background:#fff; border:2px solid var(--navy);
-    border-radius:12px; padding:14px 18px; text-align:center; min-width:150px;
+    border-radius:12px; padding:14px 18px; text-align:center; min-width:140px;
   }
   .flow .d h4{margin:0 0 4px; color:var(--navy);}
   .flow .d small{color:var(--muted); font-size:13px;}
@@ -106,194 +113,137 @@
 <header class="hero">
   <h1>30 天，把 2027 流年命書賣出 <b>3,000 本</b></h1>
   <div class="meta">國際紫微學會 × 大耕老師　｜　上架作戰提案　｜　2026-06-15</div>
-  <blockquote>不是算命，是人生方向感。一本紙本看 2027 大趨勢、掃 QR 看你個人的 12 張命盤逐月運勢。我們用 30 天，把大耕老師的 50 萬訂閱與會員私域，轉成 7/15 上架那天的 3,000 筆訂單 —— 並把名單沉澱成明年複辦與「問問」升級的母體。</blockquote>
+  <blockquote>這份提案不是憑空寫的。我們先研究了唐綺陽、詹惟中、簡少年、Co-Star、Nebula、Hobonichi、泡泡瑪特等真實成功案例，拿它們壓力測試這個產品，再長出兩個策略本質相反的方案 —— <b>方案一：把書當主角，辦一場開賣事件；方案二：把書當鉤子，經營後端十年</b>。</blockquote>
 </header>
 
 <div class="wrap">
 
   <section>
-    <span class="label solid">市場機會</span>
-    <h1 class="sec">一、為什麼 2027 命書現在該打</h1>
-    <p>年度運勢書是命理市場每年固定爆發的剛需檔期，而我們手上同時握有三張別人沒有的牌。</p>
+    <span class="label outline">先做了功課</span>
+    <h1 class="sec">一、我們用真實案例壓測了這個產品</h1>
+    <p>在動策略之前，先回答四個會決定成敗的問題。以下每個結論都有可查證的真實案例支撐。</p>
+    <table>
+      <thead><tr><th>問題</th><th>研究結論</th><th>案例依據</th></tr></thead>
+      <tbody>
+        <tr><td>紙本還能做嗎？</td><td>⚠️ 不能靠「賣資訊」。紙本只能當<b>收藏／送禮／燙金儀式容器</b>，逐月運勢的真價值放在 QR 個人化端。</td><td>唐綺陽 2021 收掉紙本、2024 全電子，上線 2.5 天 10 萬人；農民曆年印 2000 萬本逾 90% 免費。</td></tr>
+        <tr><td>30 天 3,000 本合理嗎？</td><td>✅ 合理但<b>偏上緣、非輕鬆達標</b>。50 萬訂閱 ≠ 50 萬鐵粉，真買盤約私域核心 0.5–2%（約 2,500–10,000 人池）。</td><td>阿滴百萬訂閱→1.5 萬付費；理科太太強 IP→2,700 人購買。</td></tr>
+        <tr><td>NT$980–1,280 定價？</td><td>✅ <b>偏低甚至便宜</b>。書應是前端鉤子、真錢在後端；尚有空間做親簽典藏版往上。</td><td>真人鑑定行情 NT$3,800–8,800／次；Co-Star／Nebula 單項內購約 US$30–40。</td></tr>
+        <tr><td>燙金編號限量有效嗎？</td><td>✅ 有效，但作用是<b>壓縮需求到首發爆發、做出「售罄事件」</b>，且必須真限量。</td><td>Labubu 一分鐘售罄 50 萬人搶；Hobonichi 候位室；博客來售完關車。</td></tr>
+      </tbody>
+    </table>
+    <div class="callout info"><b>最大缺口（國際案例點出我們沒做的）：</b>個人化目前是「單人私密、零裂變」——缺 Co-Star 式<b>合盤鉤子</b>與<b>可截圖金句卡</b>這兩個免費獲客引擎；年度頻率天生<b>留存弱</b>，要補年中回訪；<b>推薦碼分銷</b>（知識星球 0 成本裂變 2,078 份）也還沒用上。這些缺口在方案二補齊。</div>
+  </section>
+
+  <section>
+    <span class="label solid">產品定位修正</span>
+    <h1 class="sec">二、壓測後，產品定位三句話</h1>
     <div class="grid">
-      <div class="box"><h4>❶ 年度剛需 × 換年焦慮</h4><p>跨年前後是運勢消費高峰，「2027 我會怎樣」是全民級提問，需求不用教育、只需承接。</p></div>
-      <div class="box"><h4>❷ 自帶 50 萬訂閱流量池</h4><p>大耕老師 YT 50 萬訂閱＋付費會員＋鐵粉社團＋分會系統，不必從零買流量，導購成本極低。</p></div>
-      <div class="box"><h4>❸ 公版＋個人化的產品結構</h4><p>紙本公版統一印刷（成本固定），個人化 12 命盤走 QR 數位生成，毛利留得住、又有科技感。</p></div>
-      <div class="box"><h4>❹ 一書通往十年後端</h4><p>命書看一年，QR 頁再導「問問」看十年。首波 3,000 本同時是後端變現的入口名單。</p></div>
+      <div class="box fill"><h4>紙本＝容器</h4><p>B6 硬殼燙金精裝是「精美儀式信物」，賣收藏與送禮，不靠內容打贏免費資訊。</p></div>
+      <div class="box gold"><h4>QR 個人化＝主角</h4><p>掃碼看你的 12 命盤、合盤、金句卡 —— 不可替代的價值在這裡，也是留資與裂變入口。</p></div>
+      <div class="box"><h4>後端十年＝真錢</h4><p>導入「問問」看十年、合盤深算、真人解盤。天花板遠高於一次性書款。</p></div>
     </div>
-    <div class="callout info">市場不缺運勢書，缺的是「有信任背書、又有個人化體驗」的那一本。<b>大耕老師的影響力 × 國際紫微學會的專業 × 公版＋QR 的產品設計</b>，正好補上這個位置。</div>
+    <blockquote class="quote">紙本是容器、個人化是主角、後端十年是真錢。</blockquote>
+    <p class="note">這三句話分別長成下面兩個方案：方案一押前半（賣斷收藏的開賣事件），方案二押後半（會員入口的後端生態）。</p>
   </section>
 
   <section>
-    <span class="label outline">產品</span>
-    <h1 class="sec">二、我們賣的是什麼</h1>
-    <p>B6 硬殼精裝、蛇腹摺雙面 24 頁、封面燙金。一本拿在手上有重量、放書架有質感的年度收藏品。</p>
+    <span class="label a">方案一</span>
+    <h1 class="sec">三、年度開賣事件 — 書當主角、賣斷收藏</h1>
+    <blockquote class="quote">不是上架一本書，是辦一場開賣事件。</blockquote>
+    <p>把全部火力壓在 7/15 前後 3–7 天，用稀缺＋IP 引爆＋限量贈品＋通路背書，做一場「售罄事件」。書即主商品、賣斷即利潤。<b>短打、衝爆量、賺一次性現金。</b></p>
+
+    <div class="plan">
+      <h3>三支柱（每支柱都有真實原型）</h3>
+      <div class="grid">
+        <div class="box"><h4>事件化首發</h4><p>7/15 訂為「2027 命書開賣日」，五渠道同步倒數、開賣前開「候補登記」蓄水。</p><div class="src">原型：Hobonichi 固定上市日＋虛擬候位室</div></div>
+        <div class="box"><h4>編號稀缺</h4><p>首刷燙金編號 No.0001–3000 真絕版，售完即關購物車。</p><div class="src">原型：Labubu 編號搶購、博客來售完關車</div></div>
+        <div class="box"><h4>IP 引爆＋贈品</h4><p>大耕老師一支重磅長片引爆＋首刷隨書限量開運物。</p><div class="src">原型：老高一支內容 32 刷、詹惟中年年贈品</div></div>
+        <div class="box gold"><h4>通路安全閥</h4><p>博客來／誠品同步開限量首刷預購；售罄後轉「再版預購」承接溢出。</p><div class="src">原型：博客來首刷特典、嘖嘖募資式預售</div></div>
+      </div>
+      <h3>五渠道配額（首發集中型）</h3>
+      <table>
+        <thead><tr><th>渠道</th><th>角色</th><th>配額</th></tr></thead>
+        <tbody>
+          <tr><td>① YT 50 萬</td><td>一支內容引爆放大</td><td><b>750</b></td></tr>
+          <tr><td>② 紫微妙算會員</td><td>開賣日第一波收割</td><td><b>800</b></td></tr>
+          <tr><td>③ LINE OA</td><td>候補＋倒數催單</td><td><b>600</b></td></tr>
+          <tr><td>④ 學員社團</td><td>鐵粉曬編號首爆</td><td><b>500</b></td></tr>
+          <tr><td>⑤ 分會系統</td><td>團購＋贈品背書</td><td><b>350</b></td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="2">合計（目標首發 7 天打掉 ≥ 70%）</td><td><b>3,000</b></td></tr></tfoot>
+      </table>
+      <p><b>定價：</b>首刷燙金編號版 NT$1,280（限量 3,000）＋ 老師親簽典藏版 NT$1,880（限量 300）＋ 後續普通再版 NT$980 承接長尾。<b>預算：</b>廣告集中 NT$6–10 萬打首發。<b>KPI：</b>首發 7 天佔比 ≥70%、候補登記 ≥6,000、分級目標 1,500／3,000／5,000。</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="label b">方案二</span>
+    <h1 class="sec">四、個人化命書 × 後端十年 — 書當鉤子、經營 LTV</h1>
+    <blockquote class="quote">書是入口，不是終點。</blockquote>
+    <p>重心不是賣掉 3,000 本，是把 3,000 本變成 3,000 個進入後端命理生態的會員，經營續訂／合盤／十年深算／真人解盤的 LTV。<b>長打、衝後端、賺長期資產。</b></p>
+
+    <div class="plan b">
+      <h3>三支柱（補齊方案一缺的）</h3>
+      <div class="grid">
+        <div class="box gold"><h4>個人化＋合盤裂變</h4><p>QR 看個人盤後，立刻給「輸入家人／另一半，免費看你們 2027 關係流年」＋可截圖金句卡。</p><div class="src">原型：Co-Star Add Friends、Nebula 98% 查感情</div></div>
+        <div class="box"><h4>免費入口撈活人</h4><p>書外另開「免費測你 2027 三大關鍵月」掃碼頁，先撈名單再導購書。</p><div class="src">原型：Sanctuary 免費鉤子、TikTok「留言幫你讀盤」</div></div>
+        <div class="box"><h4>後端價值階梯</h4><p>進 App 免費看十年總覽 → 低門檻體驗（看一個月）→ 十年深算／合盤／真人解盤。</p><div class="src">原型：Sanctuary $4.99 破冰升單、簡少年書→解盤→課</div></div>
+        <div class="box gold"><h4>日更留存＋分銷裂變</h4><p>每日宜忌／流月提醒養日活（治年度留存弱）；每位買家配推薦碼分銷。</p><div class="src">原型：靈機順曆日活 200 萬、知識星球裂變 2,078 份</div></div>
+      </div>
+      <h3>五渠道配額（會員入口型）</h3>
+      <table>
+        <thead><tr><th>渠道</th><th>角色</th><th>配額</th></tr></thead>
+        <tbody>
+          <tr><td>① YT 50 萬</td><td>免費測算入口撈名單</td><td><b>850</b></td></tr>
+          <tr><td>② 紫微妙算會員</td><td>高意向＋升後端</td><td><b>700</b></td></tr>
+          <tr><td>③ LINE OA</td><td>私域承接＋升級閉環</td><td><b>650</b></td></tr>
+          <tr><td>④ 學員社團</td><td>鐵粉＋合盤裂變源</td><td><b>500</b></td></tr>
+          <tr><td>⑤ 分會系統</td><td>團購＋真人解盤導流</td><td><b>300</b></td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="2">合計（另撈免費測算名單 ≥1.8 萬）</td><td><b>3,000</b></td></tr></tfoot>
+      </table>
+      <p><b>定價：</b>書 NT$980 親民鉤子 ＋ 後端階梯（十年總覽免費 → 體驗 NT$XX → 深算／合盤／真人解盤高客單）。<b>KPI：</b>進 App ≥20%（600–900 人）、後端付費 ≥8%（240+ 人）、真人解盤 ≥4%（120+ 人）、推薦碼裂變 ≥15%。</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="label solid">怎麼選</span>
+    <h1 class="sec">五、兩方案比較與合打建議</h1>
+    <table>
+      <thead><tr><th>比較項</th><th>方案一 開賣事件</th><th>方案二 後端十年</th></tr></thead>
+      <tbody>
+        <tr><td>書的角色</td><td>主角（賣斷收藏）</td><td>鉤子（會員入口）</td></tr>
+        <tr><td>賺什麼</td><td>一次性現金</td><td>長期 LTV 資產</td></tr>
+        <tr><td>節奏</td><td>短打・7 天爆量</td><td>長打・養成</td></tr>
+        <tr><td>北極星 KPI</td><td>首波 3,000 本售罄</td><td>後端付費率／LTV</td></tr>
+        <tr><td>定價策略</td><td>精品稀缺（1,280／1,880）</td><td>親民鉤子（980）＋後端</td></tr>
+        <tr><td>廣告預算</td><td>NT$6–10 萬（集中首發）</td><td>NT$5–12 萬（撈名單）</td></tr>
+        <tr><td>最大風險</td><td>真限量承諾要守住</td><td>跨平台流失、見效慢</td></tr>
+      </tbody>
+    </table>
+    <div class="callout success"><b>最強是合打：</b>方案一做首發（7 天打爆收現金）、方案二做後端（每位買家導進十年生態）。事件賺現金、生態賺 LTV。若要先選一條，依「這次<b>要現金</b>（選一）還是<b>要長期會員資產</b>（選二）」拍板。</div>
+  </section>
+
+  <section>
+    <span class="label outline">紅線</span>
+    <h1 class="sec">六、合規與口碑紅線（兩方案共用）</h1>
     <div class="grid">
-      <div class="box fill">
-        <h4>紙本（公版）</h4>
-        <ul><li>2027 關鍵字・年度主題</li><li>流年命宮・四化</li><li>財運／事業／感情／健康</li><li>貴人地圖・避雷區・開運建議</li><li>十二月令逐月趨勢・寫給自己的信</li></ul>
-      </div>
-      <div class="box gold">
-        <h4>QR 專屬頁（個人化）</h4>
-        <ul><li>掃碼輸入生辰 → 生成你的命盤</li><li>個人 12 個月逐月運勢</li><li>留資入口（名單沉澱）</li><li>底部鉤子 → 看十年大運（問問）</li></ul>
-      </div>
+      <div class="box"><h4>不碰承諾話術</h4><p>守「收藏／儀式／自我覺察」定位，<b>絕不寫保證／必中／招財躺賺</b>。理科太太因內容權威爭議全面退費，是前車之鑑。</p></div>
+      <div class="box"><h4>乾淨升單</h4><p>後端明碼標價、清楚退費、不做「預言延期」式誘導。中國「測測」因誘導消費被 3·15 點名。</p></div>
     </div>
-    <p class="note">封面三選一：<b>A 宇宙導航</b>（深藍燙金星軌）／<b>B 旭日初昇</b>（大地色山景）／<b>C 舞動丁未</b>（黑金「丁未」書法）。</p>
-    <blockquote class="quote">不是預測未來，而是陪你走過未來。</blockquote>
   </section>
 
   <section>
-    <span class="label solid">核心策略</span>
-    <h1 class="sec">三、打法主軸：先傳播、後銷售</h1>
-    <p>不在第一天硬推成交。先用內容把活人撈出來（領免費版、留資），多波培育養信任，把變現主力壓在 7/15 上架的引爆波。</p>
-    <div class="flow">
-      <div class="d"><h4>傳播</h4><small>內容種草・撈活人</small></div>
-      <div class="arrow">→</div>
-      <div class="d"><h4>養單</h4><small>私域多波觸點・培育信任</small></div>
-      <div class="arrow">→</div>
-      <div class="d"><h4>收割</h4><small>限量首刷・倒數催單</small></div>
-      <div class="arrow">→</div>
-      <div class="d"><h4>升級</h4><small>QR 啟用・問問十年</small></div>
-    </div>
-    <div class="callout warn"><b>大耕老師定位（不可變）：</b>老師＝<b>KOL 導購與話題引流</b>，為這本書站台、解讀 2027 大趨勢、示範怎麼用，把注意力導到預購頁。<b>不開課、不逐章主講</b> —— 書是主商品，老師是引流口。</div>
-  </section>
-
-  <section>
-    <span class="label outline">轉換漏斗</span>
-    <h1 class="sec">四、五大導流來源 → 3,000 本</h1>
-    <p>五個渠道、各有配額，合起來守住 3,000 本。下表轉換率為保守假設，待各渠道實際名單規模回填後校準。</p>
-    <table>
-      <thead><tr><th>導流來源</th><th>性質</th><th>本波配額</th><th>打法</th></tr></thead>
-      <tbody>
-        <tr><td>① YT 50 萬訂閱</td><td>泛流量・基數最大</td><td><b>800–1,020</b></td><td>長片＋短影音種草，導「領 2027 關鍵字」</td></tr>
-        <tr><td>② 紫微妙算會員</td><td>付費命理・高意向</td><td><b>700–850</b></td><td>EDM／站內信多波培育，主力收割池</td></tr>
-        <tr><td>③ LINE 官方帳號</td><td>已加好友・可推播</td><td><b>600–630</b></td><td>分眾推播多波（種草→限量→倒數）</td></tr>
-        <tr><td>④ 學員社團</td><td>高黏著・信任最強</td><td><b>450–500</b></td><td>老師親貼＋鐵粉開箱接龍，轉換最高</td></tr>
-        <tr><td>⑤ 分會系統</td><td>線下老師網絡・團購</td><td><b>200–300</b></td><td>分會團購配額、線下展示書</td></tr>
-      </tbody>
-      <tfoot><tr><td colspan="2">合計</td><td colspan="2"><b>3,000 本</b></td></tr></tfoot>
-    </table>
-    <div class="callout success"><b>順帶沉澱資產：</b>本波預計沉澱免費版領取名單 <b>1.5–1.8 萬筆</b>，是明年複辦與「問問」升級的母體 —— 賣完書，名單也是淨賺。</div>
-  </section>
-
-  <section>
-    <span class="label solid">兩種打法</span>
-    <h1 class="sec">五、兩條路線，二選一</h1>
-    <p>同一個 3,000 本目標、同一批渠道，兩種策略性格。請依「重品牌複辦」或「重速度爆量」擇一，另一條可當輔助波。</p>
-    <div class="grid">
-      <div class="box">
-        <h4>路線 A・年度儀式陪伴 <span class="tag">護品牌</span></h4>
-        <p>把命書做成「給自己的年度儀式・限量首刷收藏」。靠私域信任慢養、收藏稀缺逼單。</p>
-        <ul>
-          <li>主力：會員／LINE／社團／分會 深耕</li>
-          <li>廣告：低（NT$3.5–6 萬，僅補量）</li>
-          <li>客單高、毛利好、可年年複辦</li>
-          <li>代價：30 天衝量較吃緊，靠多波培育</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h4>路線 B・開運避雷搶運 <span class="tag">衝量快</span></h4>
-        <p>把 7/15 做成「開運必備・限時搶運」事件。話題短影音＋KOL 導購＋廣告放大。</p>
-        <ul>
-          <li>主力：生肖／命宮話題短影音＋再行銷</li>
-          <li>廣告：高（NT$16–27 萬，主力引擎）</li>
-          <li>衝量最快、適合一次打爆</li>
-          <li>代價：促銷感較重，需守不焦慮紅線</li>
-        </ul>
-      </div>
-    </div>
-    <table>
-      <thead><tr><th>比較項</th><th>路線 A 儀式陪伴</th><th>路線 B 避雷搶運</th></tr></thead>
-      <tbody>
-        <tr><td>情緒槓桿</td><td>溫度・儀式・陪伴・成長</td><td>急迫・稀缺・FOMO・趨吉避凶</td></tr>
-        <tr><td>主引擎</td><td>私域深耕</td><td>話題短影音＋廣告放大</td></tr>
-        <tr><td>廣告預算</td><td>NT$3.5–6 萬</td><td>NT$16–27 萬</td></tr>
-        <tr><td>衝量速度</td><td>中</td><td>快</td></tr>
-        <tr><td>客單／毛利</td><td>高</td><td>中</td></tr>
-        <tr><td>品牌調性</td><td>護得最好、可複用</td><td>偏促銷、需控紅線</td></tr>
-      </tbody>
-    </table>
-    <div class="callout info"><b>建議：</b>若這是「年年要辦的年度 IP」→ 選 A 打底、B 的短影音當輔助波；若這次要「先一次打爆、驗證市場」→ 選 B，但守住企劃書紅線：不過度焦慮、不無限切割加購。</div>
-  </section>
-
-  <section>
-    <span class="label outline">作戰時程</span>
-    <h1 class="sec">六、30 天作戰時程</h1>
-    <p>今天 6/15 起跑、7/15 上架引爆、月底收尾。每階段有負責人、有交付物。</p>
-    <table>
-      <thead><tr><th>階段</th><th>日期</th><th>重點動作</th><th>負責</th></tr></thead>
-      <tbody>
-        <tr><td>P0 籌備</td><td>6/15–6/20</td><td>封面定版、預購頁＋QR 頁建置、免費版「關鍵字」上線、客服話術定稿</td><td>客戶經理＋前端＋視覺</td></tr>
-        <tr><td>P1 種草／話題</td><td>6/21–6/30</td><td>老師長片上線、短影音／十二月令鋪陳、各渠道開撈名單</td><td>內容＋短影音</td></tr>
-        <tr><td>P2 暖身預購</td><td>7/1–7/9</td><td>首刷早鳥開賣、會員／LINE／社團多波培育、開箱片</td><td>CRM＋通路BD</td></tr>
-        <tr><td>P3 倒數催單</td><td>7/10–7/14</td><td>限量倒數、催單直播①、分會團購收單、棄單救回</td><td>CRM＋客服</td></tr>
-        <tr><td>P4 上架引爆</td><td>7/15</td><td>正式上架、催單直播②、全渠道同步、限量編號逼單</td><td>全員</td></tr>
-        <tr><td>P5 收尾交付</td><td>7/16–7/31</td><td>出貨、QR 啟用引導、問問升級首推、回購／轉介、復盤</td><td>客服＋資料整合</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <span class="label solid">售價與優惠</span>
-    <h1 class="sec">七、售價與限時優惠</h1>
-    <p class="note">以下為建議結構，售價待大耕老師端拍板後替換。</p>
-    <table>
-      <thead><tr><th>項目</th><th>建議</th><th>說明</th></tr></thead>
-      <tbody>
-        <tr><td>正式定價</td><td><span class="mark">NT$1,280</span></td><td>精裝＋個人化命盤，定錨「收藏＋工具」</td></tr>
-        <tr><td>預購早鳥</td><td><span class="mark">NT$980</span></td><td>6/15–7/14 限量首刷、燙金流水編號</td></tr>
-        <tr><td>家庭加購</td><td>雙人 +NT$880／三人 +NT$1,680</td><td>對應企劃書「家庭版超重要」</td></tr>
-        <tr><td>後端升級</td><td>問問 App 下載／十年大運加購</td><td>看十年的變現，不計入首波 3,000</td></tr>
-      </tbody>
-    </table>
-    <div class="callout warn"><b>限時優惠（製造稀缺，不焦慮）：</b>首刷限量燙金編號，預購早鳥 NT$980 為全年最低；上架後回正式定價。早鳥可設階梯（越早越便宜）或固定價，依路線 A／B 而定。</div>
-  </section>
-
-  <section>
-    <span class="label outline">升級路徑</span>
-    <h1 class="sec">八、看一年 → 看十年</h1>
-    <p>命書解決「2027 怎麼走」；想看更遠，QR 專屬頁底部固定導入「問問」。首波每一本書，都是後端十年變現的入口。</p>
+    <span class="label solid">下一步</span>
+    <h1 class="sec">七、要動起來，先給我們這 5 件事</h1>
     <div class="steps">
-      <div class="step"><div class="n">1</div><div><h4 style="margin:0 0 4px;">買書（看一年）</h4><p style="margin:0;">紙本公版年度趨勢＋個人化 12 命盤，一年份的方向感先到位。</p></div></div>
-      <div class="step"><div class="n">2</div><div><h4 style="margin:0 0 4px;">掃 QR 啟用</h4><p style="margin:0;">輸入生辰生成個人命盤 → 同時完成留資，名單進會員主檔。</p></div></div>
-      <div class="step"><div class="n">3</div><div><h4 style="margin:0 0 4px;">導入問問（看十年）</h4><p style="margin:0;">QR 頁底鉤子 → 下載問問 App、加購十年大運／流月深算／真人解盤。</p></div></div>
-      <div class="step"><div class="n">4</div><div><h4 style="margin:0 0 4px;">長期回購</h4><p style="margin:0;">生日月、年末關懷推播 → 2028 命書預購 → 年年複辦的年度 IP 飛輪。</p></div></div>
-    </div>
-  </section>
-
-  <section>
-    <span class="label solid">KPI 與分工</span>
-    <h1 class="sec">九、成效指標與團隊分工</h1>
-    <div class="grid">
-      <div class="box gold"><h4>北極星</h4><p>首波預購＋上架銷量 <b>3,000 本</b>；沉澱名單 <b>≥ 1.5 萬</b>。</p></div>
-      <div class="box"><h4>過程指標</h4><p>免費版領取、長片觀看、EDM／LINE 點擊、預購頁轉換、棄單救回、QR 啟用率、問問升級率。</p></div>
-    </div>
-    <table>
-      <thead><tr><th>工作</th><th>負責</th></tr></thead>
-      <tbody>
-        <tr><td>總調度・交期・客戶窗口</td><td>客戶經理</td></tr>
-        <tr><td>內容腳本／文案・短影音／剪輯</td><td>內容創作官・短影音策略師・剪輯教練</td></tr>
-        <tr><td>主視覺／預購頁／QR 頁</td><td>視覺設計師・前端交付工程師</td></tr>
-        <tr><td>私域推播／EDM／棄單救回</td><td>CRM 行銷師</td></tr>
-        <tr><td>分會團購／KOL 協調</td><td>通路 BD（對接大耕老師端）</td></tr>
-        <tr><td>廣告投放／ROAS（路線 B）</td><td>Meta 投手</td></tr>
-        <tr><td>客服話術／購後流程</td><td>客服專員・學員成功經理</td></tr>
-        <tr><td>漏斗／KPI 儀表板</td><td>資料整合官</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <span class="label outline">下一步</span>
-    <h1 class="sec">十、要動起來，先給我們這 5 件事</h1>
-    <div class="steps">
-      <div class="step"><div class="n">1</div><div><p style="margin:0;"><b>選定路線</b>（A 儀式陪伴／B 避雷搶運），另一條可當輔助波。</p></div></div>
+      <div class="step"><div class="n">1</div><div><p style="margin:0;"><b>選方向</b>：方案一（要現金）／方案二（要會員資產）／合打。</p></div></div>
       <div class="step"><div class="n">2</div><div><p style="margin:0;"><b>五渠道實際名單規模</b>（會員數、LINE 好友、社團、分會配額）→ 校準漏斗。</p></div></div>
-      <div class="step"><div class="n">3</div><div><p style="margin:0;"><b>售價拍板</b>（定價／早鳥／家庭加購）。</p></div></div>
-      <div class="step"><div class="n">4</div><div><p style="margin:0;"><b>QR 專屬頁／問問串接</b> 7/15 前能否上線（升級鉤子成立的關鍵）。</p></div></div>
-      <div class="step"><div class="n">5</div><div><p style="margin:0;"><b>大耕老師拍片檔期</b>與是否開直播、<b>物流方</b>與到貨承諾。</p></div></div>
+      <div class="step"><div class="n">3</div><div><p style="margin:0;"><b>售價拍板</b>＋是否做親簽典藏版／首刷限量開運贈品。</p></div></div>
+      <div class="step"><div class="n">4</div><div><p style="margin:0;"><b>QR 個人化／合盤／問問串接</b> 7/15 前能否上線（方案二的關鍵）。</p></div></div>
+      <div class="step"><div class="n">5</div><div><p style="margin:0;"><b>大耕老師拍片檔期</b>、物流方與到貨承諾、是否走博客來／誠品通路預購。</p></div></div>
     </div>
-    <div class="callout neutral"><span class="src">本提案由梵熹工作台製作，2026-06-15。產品事實取自「2027 年度運勢書提案」與「ISZN AI 人生策略顧問企劃書」；漏斗轉換率為保守假設，待客戶端名單規模回填後校準。售價為建議值、待拍板。</span></div>
+    <div class="callout neutral"><span class="src">本提案由梵熹工作台製作，2026-06-15。策略建立在 4 份真實案例研究之上（唐綺陽／詹惟中／謝沅瑾／簡少年／雨揚／Co-Star／The Pattern／Sanctuary／Nebula／CHANI／Hobonichi／泡泡瑪特／測測／靈機／科技紫微網等，皆附可查證來源，詳見內部「壓力測試情報」文件）。漏斗轉換率為保守假設，待客戶端名單規模回填後校準；售價與後端定價為建議值、待拍板。</span></div>
   </section>
 
 </div>
