@@ -53,7 +53,7 @@
   h2.sec{font-size:22px; margin:36px 0 14px;}
   p{margin:0 0 14px;}
   table{width:100%; border-collapse:collapse; margin:18px 0; font-size:15px;}
-  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top;}
+  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top; word-break:break-word; overflow-wrap:anywhere;}
   thead th, tr.head td{background:var(--navy-soft); font-weight:700;}
   tfoot td{background:var(--gold-soft); font-weight:700;}
   .callout{border-radius:10px; padding:16px 20px; margin:20px 0; font-size:15px;}
@@ -104,6 +104,8 @@
     .grid{grid-template-columns:1fr;}
     .hero h1{font-size:26px;}
     .arrow{display:none;}
+    table{font-size:12.5px; table-layout:fixed; width:100%;}
+    th,td{padding:6px 7px;}
   }
   @media print{ body{background:#fff;} section{break-inside:avoid;} .hero{background:#1b2647 !important;} }
 </style>
